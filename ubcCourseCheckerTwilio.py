@@ -25,14 +25,14 @@ from twilio.rest import Client
 def notify():
   print("Seat available. " + courseURL)
   webbrowser.open_new(courseURL)
-  account_sid = 'ACf8849565daa31a8cab50e4147eb3967c'
-  auth_token = '310fdb3a884d38e1c2c9a80994688eac'
+  account_sid = 'PLACEHOLDER' # Enter your own Twilio SID here
+  auth_token = 'PLACEHOLDER' # Enter your own Twilio auth token here
   client = Client(account_sid, auth_token)
 
   message = client.messages.create(
          body="Seat available for " + courseURL,
-         messaging_service_sid='MG3d960e33419ec84421b8d68e7c5ff51b',
-         to='+17789275801'
+         messaging_service_sid='PLACEHOLDER', # Enter your own Twilio MID here
+         to='+XXXXXXXXXXX' # Enter your own phone number here
      )
 
   print(message.sid)

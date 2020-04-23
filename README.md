@@ -8,5 +8,7 @@ pip install twilio
 
 Enter your Twilio : sid, auth token, phone number, and mid, where indicated in the py file 
 
+Open
+
 That's it!
 

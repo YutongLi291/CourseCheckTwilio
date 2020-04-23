@@ -1,5 +1,6 @@
 # CourseCheckTwilio
 Texts you when your course is open at UBC
+
 Be sure the url includes the session!
 
 use :
